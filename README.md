@@ -1,135 +1,58 @@
-# شهباز | فروشگاه اینترنتی پوشاک
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-نسخه چندصفحه‌ای فرانت‌اند فروشگاه شهباز با HTML5، CSS3 و JavaScript خام. این پروژه مستقل از React، Vue و Bootstrap است و برای توسعه و اتصال بعدی به API آماده شده است.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-## اجرا
+## About Laravel
 
-برای اینکه مسیرهای دسته‌بندی و صفحه‌های داخلی درست کار کنند، پروژه را از طریق یک وب‌سرور ساده اجرا کن؛ بازکردن مستقیم فایل‌ها با `file://` توصیه نمی‌شود.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Learning Laravel
+
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+
+In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+
+## Agentic Development
+
+Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
 
 ```bash
-# وارد پوشه shahbaz-storefront شو و اجرا کن
-python -m http.server 8000
+composer require laravel/boost --dev
+
+php artisan boost:install
 ```
 
-سپس در مرورگر باز کن:
+Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
 
-```text
-http://localhost:8000/
-```
+## Contributing
 
-در صورت استفاده از VS Code، افزونه Live Server نیز قابل استفاده است. هنگام انتشار، تمام محتویات این پوشه باید در ریشه دامنه قرار بگیرد تا مسیرهای `/men/`، `/women/` و بقیه درست resolve شوند.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## صفحه‌ها و مسیرها
+## Code of Conduct
 
-| مسیر | توضیح |
-|---|---|
-| `/` | صفحه اصلی و ویترین برند |
-| `/men/` | پوشاک مردانه |
-| `/women/` | پوشاک زنانه |
-| `/kids/` | پوشاک بچگانه |
-| `/bags-shoes/` | کیف و کفش |
-| `/account/` | صفحه حساب کاربری مهمان و ویرایش اطلاعات پایه |
-| `/wishlist/` | فهرست کامل علاقه‌مندی‌ها |
-| `/cart/` | صفحه کامل سبد خرید و خلاصه سفارش |
-| `/search/?q=...` | جست‌وجوی سراسری محصولات |
-| `/product.html?id=linen-shirt` | جزئیات هر محصول، انتخاب سایز و رنگ |
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## امکانات
+## Security Vulnerabilities
 
-- بازگشت کامل به پالت Natural Luxury زیتونی/خاکی برند شهباز
-- اسلایدر خودکار چهارموضوعی مردانه، زنانه، بچگانه و کیف‌وکفش با کنترل دستی، نقطه‌های پیمایش، پشتیبانی لمس و توقف خودکار هنگام hover/focus
-- استفاده از بنرهای منتخب کاربر در صفحات دسته‌بندی و تصاویر تمیز هماهنگ در کارت‌های دسته‌بندی صفحه اصلی
-- چیدمان چهار کارت دسته‌بندی هم‌اندازه در یک ردیف دسکتاپ، با گوشه‌های گرد، تصویر تمام‌سطح و تنظیم نقطه کانونی هر عکس؛ در تبلت و موبایل چیدمان به دو ستون تبدیل می‌شود.
-- ۱۶ تصویر محلی اختصاصی برای تمام محصولات نمونه؛ بدون وابستگی تصاویر محصول به Unsplash
-- انیمیشن اختصاصی و کوتاه برای ورود هر نوع صفحه
-- انتقال نرم بین لینک‌های داخلی و انیمیشن ورود بخش‌ها هنگام اسکرول
-- رعایت تنظیم دسترس‌پذیری `prefers-reduced-motion` برای کاهش حرکت
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-- هدر مشترک و منوی دسکتاپ/موبایل در تمام صفحه‌ها
-- صفحه‌های مستقل چهار دسته‌بندی با داده‌های مرکزی مشترک
-- صفحه جزئیات محصول با انتخاب سایز و رنگ
-- سبد خرید کشویی و صفحه سبد خرید، افزایش/کاهش تعداد و حذف کالا
-- نگهداری انتخاب سایز و رنگ در ردیف سبد خرید
-- علاقه‌مندی‌ها با پنل کشویی و صفحه مستقل
-- رفع وضعیت نادرست حالت خالی: پیام و دکمه «رفتن به دسته‌بندی‌ها» فقط وقتی سبد واقعاً خالی است نمایش داده می‌شوند
-- رفع وضعیت نادرست علاقه‌مندی‌ها: وقتی حداقل یک محصول ذخیره شده باشد، پیام خالی مخفی و محصول نمایش داده می‌شود
-- شمارنده‌های مشترک سبد و علاقه‌مندی در تمام صفحه‌ها
-- ذخیره سبد، علاقه‌مندی‌ها و اطلاعات پروفایل در `localStorage`
-- مهاجرت خودکار تعدادی از شناسه‌های نسخه قبلی پروژه به کاتالوگ جدید
-- جست‌وجوی زنده در تمام محصولات، رنگ‌ها، سایزها، دسته‌ها و توضیحات؛ همراه با پس‌زمینه بلورشده و پیشنهادهای فوری
-- فیلترهای دسته‌بندی در سایدبار سمت راست دسکتاپ: بازه قیمت، رنگ، سایز و محصولات تخفیف‌دار
-- فیلتر تمام‌صفحه موبایل با دکمه شناور، پیش‌نمایش انتخاب‌ها و اعمال/پاک‌کردن فیلترها
-- صفحه جزئیات محصول با انتخاب دیداری رنگ و سایز، راهنمای متحرک متناسب با نوع محصول، بخش‌های بازشونده و نوار خرید موبایل
-- مرتب‌سازی قیمت و میزان تخفیف در کنار فیلترهای ترکیبی
-- فرم اطلاعات حساب کاربری مهمان؛ بدون ادعای ورود یا احراز هویت واقعی
-- منوی موبایل، Bottom Navigation، بستن پنل‌ها با Escape و کلیک روی Overlay
-- مدیریت وضعیت‌های خالی، پیام‌های بازخورد و تصویر جایگزین محلی
-- متاتگ‌های پایه، Open Graph، داده ساختاریافته Organization و WebSite، عنوان و توضیحات صفحه‌ها، Alt فارسی و یک H1 در هر صفحه
+## License
 
-## سیستم رنگی
-
-رنگ‌ها از مرجع ارائه‌شده برای برند گرفته شده‌اند و به‌صورت CSS Custom Properties در ابتدای `assets/css/style.css` تعریف شده‌اند:
-
-| نام | کد |
-|---|---|
-| سفید گرم | `#FAFAF7` |
-| سفید | `#FFFFFF` |
-| زیتونی تیره | `#354638` |
-| خاکی | `#B7A58A` |
-| مشکی گرم | `#242424` |
-| خاکستری | `#858585` |
-
-## ساختار فایل‌ها
-
-```text
-shahbaz-storefront/
-├── index.html
-├── product.html
-├── men/index.html
-├── women/index.html
-├── kids/index.html
-├── bags-shoes/index.html
-├── account/index.html
-├── wishlist/index.html
-├── cart/index.html
-├── search/index.html
-├── assets/
-│   ├── css/style.css
-│   ├── js/catalog.js
-│   ├── js/app.js
-│   ├── js/home-slider.js
-│   ├── js/storefront-experience.js
-│   └── images/
-│       ├── sliders/       # تصاویر بدون نوشته اسلایدر
-│       ├── categories/    # بنرهای منتخب صفحات دسته‌بندی
-│       ├── editorial/     # تصاویر بخش‌های معرفی برند
-│       ├── products/      # ۱۶ تصویر محصول نمونه
-│       └── fallback-fashion.svg
-└── README.md
-```
-
-## داده‌ها و اتصال به بک‌اند
-
-- محصولات و دسته‌ها در `assets/js/catalog.js` نگهداری می‌شوند؛ تمام صفحه‌ها همین کاتالوگ را مصرف می‌کنند.
-- اطلاعات سبد و علاقه‌مندی با کلیدهای `shahbaz.cart.v2` و `shahbaz.wishlist.v2` و اطلاعات پروفایل با کلید `shahbaz.profile.v1` در مرورگر ذخیره می‌شوند.
-- قیمت، موجودی و تصاویر فعلی داده نمونه هستند. پیش از فروش واقعی باید از API فروشگاه خوانده شوند.
-- ورود/ثبت‌نام، احراز هویت، سفارش، محاسبه ارسال و پرداخت آنلاین به بک‌اند و سرویس‌های واقعی نیاز دارند و در این نسخه فعال یا شبیه‌سازیِ موفق نشده‌اند.
-- اطلاعات تماس، قوانین، شرایط بازگشت و نمادهای فروشگاه عمداً جعل نشده‌اند؛ باید پس از دریافت اطلاعات رسمی تکمیل شوند.
-- تصاویر اسلایدر، بنرهای دسته‌بندی و ۱۶ تصویر محصول در پوشه `assets/images/` به‌صورت WebP محلی قرار گرفته‌اند تا در حالت آفلاین نیز نمایش داده شوند. تصویرهای محصولات و بنرهای تبلیغاتی برای نسخه نمایشی هستند و پیش از فروش واقعی باید با تصاویر نهایی و دارای مجوز فروشگاه جایگزین شوند. فونت Vazirmatn همچنان از Google Fonts بارگیری می‌شود و در حالت آفلاین ممکن است فونت جایگزین سیستم استفاده شود.
-
-## نکات توسعه
-
-- برای افزودن محصول، یک رکورد جدید به `SHAHBAZ_CATALOG` در `assets/js/catalog.js` اضافه کن.
-- برای افزودن دسته، یک ورودی به `SHAHBAZ_CATEGORIES`، یک پوشه دارای `index.html` و آیتم مسیر آن در `renderHeader()` و `renderFooter()` اضافه کن.
-- برای اتصال API، توابع خواندن/نوشتن state در `assets/js/app.js` نقطه شروع مناسبی هستند؛ منطق UI از داده‌های کاتالوگ جدا نگه داشته شده است.
-
-### تجربه جست‌وجو، فیلتر و جزئیات محصول
-
-- تعاملات جدید در `assets/js/storefront-experience.js` نگهداری می‌شوند تا هسته سبد خرید و علاقه‌مندی‌ها مستقل بماند.
-- جست‌وجوی زنده، روی عنوان، توضیحات، دسته‌بندی، شناسه، رنگ و سایز تمام محصولات کاتالوگ نمونه اجرا می‌شود.
-- فیلترها تا زمان فشردن «اعمال فیلترها» صرفاً در حالت پیش‌نمایش می‌مانند؛ دکمه در حالت بدون تغییر خاکستری است اما قابل کلیک می‌ماند تا پیام راهنما نمایش داده شود.
-- جدول اندازه‌های عددی و قوانین ارسال/بازگشت واقعی هنوز به داده رسمی فروشگاه نیاز دارند؛ راهنمای سایز فعلی نکات اندازه‌گیری را ارائه می‌کند و نبود جدول عددی را شفاف اعلام می‌کند.
-
-
-### سکشن تک‌مونده‌ها
-در صفحه اصلی، بنر پایانی با سکشن تک‌مونده‌ها جایگزین شده است. محصولات دارای `stockRemaining: 1` در یک ریل افقی اسکرول‌پذیر نمایش داده می‌شوند؛ کنترل‌های قبلی/بعدی، اسکرول لمسی و لینک مشاهده همه فعال‌اند. مقدار موجودی فعلی داده نمایشی است و باید به موجودی واقعی انبار متصل شود.
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
